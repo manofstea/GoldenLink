@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Excel</h1>
+        <p class="lead opacity-75">
+          Temukan alat dan sumber daya terbaik untuk Microsoft Excel
+        </p>
+      </div>
+    </header>
+    <!-- Search Box -->
+    <!-- Add below header -->
+    <form
+      class="d-flex justify-content-center my-4"
+      role="search"
+      onsubmit="event.preventDefault();"
+    >
+      <div class="input-group w-50">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Cari website..."
+          aria-label="Search"
+          oninput="searchWebsites()"
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="searchWebsites()"
+        >
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </form>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.excel-easy.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Easy</h6>
+                <p class="card-text text-muted small">
+                  Panduan Excel dari dasar hingga tingkat lanjut.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <!-- Card No. 2 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://exceljet.net/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">ExcelJet</h6>
+                <p class="card-text text-muted small">
+                  Tips, trik, dan tutorial rumus Excel praktis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini untuk website ExcelJet yang menyediakan tips praktis. -->
+
+        <!-- Card No. 3 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://chandoo.org/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Chandoo.org</h6>
+                <p class="card-text text-muted small">
+                  Tutorial Excel mendalam, termasuk VBA.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini untuk Chandoo.org, fokus pada pembelajaran VBA. -->
+
+        <!-- Card No. 4 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.excelcampus.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Campus</h6>
+                <p class="card-text text-muted small">
+                  Video dan artikel belajar Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini untuk Excel Campus, sangat cocok untuk pembelajaran melalui video. -->
+
+        <!-- Card No. 5 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://spreadsheeto.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Spreadsheeto</h6>
+                <p class="card-text text-muted small">
+                  Panduan langkah-langkah menguasai Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menyoroti Spreadsheeto, fokus pada tutorial mendetail. -->
+
+        <!-- Card No. 6 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.mrexcel.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">MrExcel</h6>
+                <p class="card-text text-muted small">
+                  Forum untuk menyelesaikan masalah Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini untuk MrExcel, tempat berdiskusi masalah Excel. -->
+
+        <!-- Card No. 7 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.contextures.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Contextures</h6>
+                <p class="card-text text-muted small">
+                  Tutorial tabel pivot, data, dan VBA.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini membahas Contextures, sangat bermanfaat untuk tabel pivot. -->
+
+        <!-- Tambahan website lainnya -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://excel-practice-online.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Practice Online</h6>
+                <p class="card-text text-muted small">
+                  Tempat praktik langsung fungsi Excel secara online.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini membantu pemula untuk mempraktikkan fungsi Excel. -->
+
+        <!-- Card No. 8 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.vertex42.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Vertex42</h6>
+                <p class="card-text text-muted small">
+                  Template Excel untuk berbagai kebutuhan profesional.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menyediakan template Excel yang membantu pekerjaan. -->
+
+        <!-- Card No. 9 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://excelfunctions.net/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Functions</h6>
+                <p class="card-text text-muted small">
+                  Penjelasan fungsi Excel secara mendalam.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menjelaskan fungsi-fungsi penting dalam Excel. -->
+
+        <!-- Card No. 10 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.excelhero.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Hero</h6>
+                <p class="card-text text-muted small">
+                  Tutorial Excel untuk profesional dan tips VBA.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini cocok untuk belajar VBA bagi yang ingin mendalami Excel. -->
+
+        <!-- Card No. 11 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.ablebits.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">AbleBits</h6>
+                <p class="card-text text-muted small">
+                  Add-ons Excel untuk mengotomasi tugas.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menawarkan add-ons untuk meningkatkan efisiensi kerja di Excel. -->
+
+        <!-- Card No. 12 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://trumpexcel.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Trump Excel</h6>
+                <p class="card-text text-muted small">
+                  Tutorial Excel langkah demi langkah untuk pemula.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini cocok untuk pemula yang ingin belajar Excel secara terstruktur. -->
+
+        <!-- Card No. 13 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.datacamp.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">DataCamp</h6>
+                <p class="card-text text-muted small">
+                  Kursus data dan analisis menggunakan Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini membantu dalam belajar analisis data menggunakan Excel. -->
+
+        <!-- Card No. 14 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.gcflearnfree.org/excel/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">GCF Learn Free</h6>
+                <p class="card-text text-muted small">
+                  Tutorial dasar Excel gratis untuk pemula.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menyediakan tutorial dasar Excel secara gratis. -->
+
+        <!-- Card No. 15 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.udemy.com/topic/microsoft-excel/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Udemy - Microsoft Excel</h6>
+                <p class="card-text text-muted small">
+                  Kursus Excel mulai dari dasar hingga profesional.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini untuk kursus Excel di platform Udemy. -->
+
+        <!-- Card No. 16 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.excelcharts.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Charts</h6>
+                <p class="card-text text-muted small">
+                  Tutorial membuat grafik profesional di Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini membantu pengguna belajar membuat grafik di Excel. -->
+
+        <!-- Card No. 17 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.excelindepth.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel In Depth</h6>
+                <p class="card-text text-muted small">
+                  Tutorial lengkap Excel dari dasar hingga lanjutan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini cocok untuk belajar Excel secara mendalam. -->
+
+        <!-- Card No. 18 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.thespreadsheetguru.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Spreadsheet Guru</h6>
+                <p class="card-text text-muted small">
+                  Tips Excel dan template spreadsheet siap pakai.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menawarkan tips praktis dan template Excel siap pakai. -->
+
+        <!-- Card No. 19 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://exceldemy.com/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">ExcelDemy</h6>
+                <p class="card-text text-muted small">
+                  Panduan dan tutorial Excel untuk berbagai kebutuhan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini cocok untuk kebutuhan tutorial Excel yang spesifik. -->
+
+        <!-- Card No. 20 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://fiveminuteexcel.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Five Minute Excel</h6>
+                <p class="card-text text-muted small">
+                  Pelajaran singkat Excel dalam lima menit.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini sangat berguna untuk belajar Excel dengan cepat. -->
+
+        <!-- Tambahan hingga Card No. 30 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.makeuseof.com/tag/excel/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">MakeUseOf</h6>
+                <p class="card-text text-muted small">
+                  Tips dan trik Excel untuk pengguna semua level.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini memberikan tips yang sering diabaikan. -->
+
+        <!-- Card No. 21 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://trumpexcel.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Trump Excel</h6>
+                <p class="card-text text-muted small">
+                  Tutorial dan tips untuk meningkatkan produktivitas Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini sangat berguna untuk mempelajari trik Excel yang canggih. -->
+
+        <!-- Card No. 22 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.excelcampus.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Campus</h6>
+                <p class="card-text text-muted small">
+                  Blog dan video tutorial untuk berbagai keahlian Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini ideal untuk belajar Excel melalui blog dan video. -->
+
+        <!-- Card No. 23 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.contextures.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Contextures</h6>
+                <p class="card-text text-muted small">
+                  Panduan Excel tentang tabel pivot, filter, dan banyak lagi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini membantu memahami tabel pivot dan fitur lanjutan Excel. -->
+
+        <!-- Card No. 24 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://exceljet.net/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Jet</h6>
+                <p class="card-text text-muted small">
+                  Kumpulan rumus dan fungsi Excel yang ringkas.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini cocok untuk mencari referensi rumus Excel dengan cepat. -->
+
+        <!-- Card No. 25 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.chandoo.org/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Chandoo</h6>
+                <p class="card-text text-muted small">
+                  Kursus Excel untuk meningkatkan keterampilan profesional.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini membantu meningkatkan kemampuan Excel secara profesional. -->
+
+        <!-- Card No. 26 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.vertex42.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Vertex42</h6>
+                <p class="card-text text-muted small">
+                  Template Excel gratis untuk kebutuhan bisnis dan personal.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menyediakan template siap pakai untuk berbagai kebutuhan. -->
+
+        <!-- Card No. 27 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.peltarion.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Peltarion</h6>
+                <p class="card-text text-muted small">
+                  Integrasi AI untuk meningkatkan penggunaan Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini memperkenalkan integrasi AI dengan Excel. -->
+
+        <!-- Card No. 28 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.spreadsheeto.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Spreadsheeto</h6>
+                <p class="card-text text-muted small">
+                  Panduan belajar Excel untuk meningkatkan produktivitas.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini berisi panduan untuk meningkatkan efisiensi dalam Excel. -->
+
+        <!-- Card No. 29 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://mrexcel.com/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Mr. Excel</h6>
+                <p class="card-text text-muted small">
+                  Komunitas Excel dengan forum diskusi dan solusi praktis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini menghubungkan Anda dengan komunitas Excel global. -->
+
+        <!-- Card No. 30 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://excelforum.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Excel Forum</h6>
+                <p class="card-text text-muted small">
+                  Forum diskusi untuk solusi dan tips Excel.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card ini memberikan ruang diskusi untuk belajar dari sesama pengguna. -->
+      </div>
+    </main>
+
+    <!-- page nations -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="..//home.html">Home</a>
+            <a href="../design/index.html">Desain</a>
+            <a href="../developments/index.html">Development</a>
+            <a href="../education/index.html">Education</a>
+            <a href="../hiburan/index.html">Hiburan</a>
+            <a href="../images/index.html">Images</a>
+            <a href="../musik/index.html">Musik</a>
+            <a href="../tools/index.html">Tools</a>
+            <a href="../video/index.html">Video</a>
+          </div>
+
+          <!-- Social Links -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Design Resources. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

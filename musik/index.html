@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musik</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Musik</h1>
+        <p class="lead opacity-75">
+          Temukan platform streaming dan tools musik terbaik untuk pengalaman
+          audio Anda
+        </p>
+      </div>
+    </header>
+    <!-- Search Box -->
+    <!-- Add below header -->
+    <form
+      class="d-flex justify-content-center my-4"
+      role="search"
+      onsubmit="event.preventDefault();"
+    >
+      <div class="input-group w-50">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Cari website..."
+          aria-label="Search"
+          oninput="searchWebsites()"
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="searchWebsites()"
+        >
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </form>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://audd.io" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Audd.io</h6>
+                <p class="card-text text-muted small">
+                  Website untuk mengenali lagu secara otomatis melalui suara,
+                  mirip dengan Shazam.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.jamendo.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Jamendo</h6>
+                <p class="card-text text-muted small">
+                  Platform musik independen dengan ribuan lagu bebas royalti
+                  untuk digunakan dalam proyek pribadi dan komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://soundraw.io" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Soundraw.io</h6>
+                <p class="card-text text-muted small">
+                  Generator musik AI yang memungkinkan Anda untuk membuat lagu
+                  dengan memilih mood dan genre.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://audiojungle.net"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">AudioJungle</h6>
+                <p class="card-text text-muted small">
+                  Tempat membeli dan menjual musik royalty-free untuk digunakan
+                  dalam film, video, dan proyek lainnya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://musopen.org" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Musopen</h6>
+                <p class="card-text text-muted small">
+                  Website yang menyediakan musik klasik bebas royalti dengan
+                  sheet musik dan rekaman.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://chosic.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Chosic</h6>
+                <p class="card-text text-muted small">
+                  Kumpulan musik royalty-free dengan berbagai genre yang dapat
+                  digunakan untuk proyek.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://freemusicarchive.org"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Free Music Archive</h6>
+                <p class="card-text text-muted small">
+                  Platform musik bebas royalti yang menawarkan lagu-lagu dari
+                  berbagai genre dan artis independen.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://mixkit.co" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Mixkit</h6>
+                <p class="card-text text-muted small">
+                  Sumber musik bebas royalti dengan koleksi trek yang dapat
+                  digunakan dalam berbagai proyek.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.beatstars.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Beatstars</h6>
+                <p class="card-text text-muted small">
+                  Pasar musik online untuk produser dan musisi untuk membeli dan
+                  menjual beat musik.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.bensound.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Bensound</h6>
+                <p class="card-text text-muted small">
+                  Koleksi musik bebas royalti untuk digunakan dalam video,
+                  presentasi, dan proyek kreatif lainnya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.soundsnap.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Soundsnap</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk mengunduh suara dan efek suara royalty-free,
+                  cocok untuk proyek multimedia.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.royaltyfreemusic.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Royalty Free Music</h6>
+                <p class="card-text text-muted small">
+                  Tempat untuk menemukan musik bebas royalti untuk video, film,
+                  dan proyek komersial lainnya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.pond5.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pond5</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan berbagai macam musik, suara, video, dan media
+                  kreatif lainnya yang dapat dibeli dan digunakan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.soundclick.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">SoundClick</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membeli dan menjual musik, serta menemukan
+                  musik dari artis indie.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.freeplaymusic.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">FreePlay Music</h6>
+                <p class="card-text text-muted small">
+                  Koleksi musik bebas royalti untuk digunakan dalam proyek
+                  kreatif tanpa biaya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.musicovery.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Musicovery</h6>
+                <p class="card-text text-muted small">
+                  Alat pemutar musik yang memungkinkan pengguna untuk menemukan
+                  musik berdasarkan mood dan genre.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.datpiff.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">DatPiff</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk mengunduh dan mendengarkan mixtape gratis dari
+                  berbagai genre musik.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.beatsource.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Beatsource</h6>
+                <p class="card-text text-muted small">
+                  Platform musik yang menawarkan akses ke koleksi lagu DJ dan
+                  musik digital dengan lisensi untuk penjualan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.tunefind.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">TuneFind</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan informasi tentang lagu-lagu yang diputar di film,
+                  acara TV, dan iklan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.mubert.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Mubert</h6>
+                <p class="card-text text-muted small">
+                  Platform musik berbasis AI yang menghasilkan trek musik yang
+                  dapat diputar secara terus menerus.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.souncloud.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">SoundCloud</h6>
+                <p class="card-text text-muted small">
+                  Platform musik populer untuk menemukan dan mendengarkan lagu
+                  dari artis independen dan profesional.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.audiojungle.net"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">AudioJungle</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membeli dan menjual musik royalty-free untuk
+                  proyek kreatif.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.bandcamp.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Bandcamp</h6>
+                <p class="card-text text-muted small">
+                  Platform musik di mana musisi independen dapat memasarkan dan
+                  menjual album mereka langsung kepada pendengar.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.8tracks.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">8Tracks</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk mendengarkan dan membuat playlist musik yang
+                  dikurasi oleh pengguna lainnya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 25 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.jamendo.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Jamendo</h6>
+                <p class="card-text text-muted small">
+                  Platform musik bebas royalti yang memungkinkan pengguna untuk
+                  menemukan dan mendengarkan musik independen.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 26 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.karaoke-version.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Karaoke Version</h6>
+                <p class="card-text text-muted small">
+                  Platform yang memungkinkan Anda mengunduh versi karaoke dari
+                  lagu-lagu populer untuk bernyanyi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 27 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.ytmusic.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">YouTube Music</h6>
+                <p class="card-text text-muted small">
+                  Layanan streaming musik dari YouTube, menyediakan koleksi
+                  lagu, video musik, dan playlist.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 28 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.melodyloops.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Melody Loops</h6>
+                <p class="card-text text-muted small">
+                  Tempat untuk mengunduh musik royalty-free dan loops untuk
+                  video, proyek media, atau aplikasi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 29 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.dailystreams.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Daily Streams</h6>
+                <p class="card-text text-muted small">
+                  Layanan streaming untuk menemukan musik terbaru dan lebih
+                  banyak lagi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 30 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.spotify.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Spotify</h6>
+                <p class="card-text text-muted small">
+                  Layanan streaming musik populer dengan koleksi lagu dari
+                  berbagai genre dan artis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- page nations -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="..//home.html">Home</a>
+            <a href="../design/index.html">Desain</a>
+            <a href="../developments/index.html">Development</a>
+            <a href="../education/index.html">Education</a>
+            <a href="../exel/index.html">Excel</a>
+            <a href="../hiburan/index.html">Hiburan</a>
+            <a href="../images/index.html">Images</a>
+            <a href="../tools/index.html">Tools</a>
+            <a href="../video/index.html">Video</a>
+          </div>
+
+          <!-- Social Links -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Design Resources. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

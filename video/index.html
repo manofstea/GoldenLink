@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Video</h1>
+        <p class="lead opacity-75">
+          Temukan tools dan resources terbaik untuk editing dan produksi video
+          Anda
+        </p>
+      </div>
+    </header>
+    <!-- Search Box -->
+    <!-- Add below header -->
+    <form
+      class="d-flex justify-content-center my-4"
+      role="search"
+      onsubmit="event.preventDefault();"
+    >
+      <div class="input-group w-50">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Cari website..."
+          aria-label="Search"
+          oninput="searchWebsites()"
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="searchWebsites()"
+        >
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </form>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.pexels.com/video/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pexels Video</h6>
+                <p class="card-text text-muted small">
+                  Stok video gratis berkualitas tinggi untuk berbagai kebutuhan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://pixabay.com/videos/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pixabay Video</h6>
+                <p class="card-text text-muted small">
+                  Platform penyedia video gratis untuk penggunaan komersial dan
+                  pribadi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.videvo.net/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Videvo</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan video gratis, efek suara, dan animasi dengan
+                  berbagai lisensi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://coverr.co/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Coverr</h6>
+                <p class="card-text text-muted small">
+                  Mengunduh stok video gratis tanpa hak cipta untuk penggunaan
+                  komersial dan pribadi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://deepai.org/machine-learning-model/text2video"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">DeepAI Video Generation</h6>
+                <p class="card-text text-muted small">
+                  Membuat video menggunakan AI dari teks yang diberikan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.synthesia.io/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Synthesia</h6>
+                <p class="card-text text-muted small">
+                  AI video generation dengan avatar berbicara berdasarkan teks.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.lumen5.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Lumen5</h6>
+                <p class="card-text text-muted small">
+                  Mengubah artikel atau teks menjadi video menggunakan AI.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://runwayml.com/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Runway</h6>
+                <p class="card-text text-muted small">
+                  Pengeditan video berbasis AI dengan efek dan modifikasi
+                  visual.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.veed.io/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Veed.io</h6>
+                <p class="card-text text-muted small">
+                  Platform pengeditan video dengan fitur AI untuk pemotongan dan
+                  pengeditan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.veed.io/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Veed.io</h6>
+                <p class="card-text text-muted small">
+                  Platform pengeditan video dengan fitur AI untuk pemotongan dan
+                  pengeditan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 10 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.clipchamp.com/en/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Clipchamp</h6>
+                <p class="card-text text-muted small">
+                  Pengeditan video online dengan antarmuka yang sederhana.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 11 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.kapwing.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Kapwing</h6>
+                <p class="card-text text-muted small">
+                  Platform pengeditan video berbasis web untuk pembuatan video
+                  cepat dan kolaborasi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 12 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.flexclip.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">FlexClip</h6>
+                <p class="card-text text-muted small">
+                  Membuat video, slideshow, dan pengeditan video dengan fitur
+                  berbasis web.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 13 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.animoto.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Animoto</h6>
+                <p class="card-text text-muted small">
+                  Buat video musik dan slideshow profesional secara cepat dengan
+                  drag-and-drop.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 14 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.magisto.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Magisto</h6>
+                <p class="card-text text-muted small">
+                  Pembuat video otomatis berbasis AI yang menghasilkan video
+                  menarik dari klip Anda.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 15 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.renderforest.com/video-maker"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Renderforest</h6>
+                <p class="card-text text-muted small">
+                  Alat pembuatan video, animasi, dan presentasi berbasis web.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 16 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.invideo.io/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">InVideo</h6>
+                <p class="card-text text-muted small">
+                  Membuat video berkualitas tinggi dengan template dan alat
+                  pengeditan mudah.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 17 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.wave.video/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Wave.video</h6>
+                <p class="card-text text-muted small">
+                  Membuat dan mengedit video berkualitas tinggi dengan fitur
+                  kolaboratif.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 18 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.veed.io/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Veed.io</h6>
+                <p class="card-text text-muted small">
+                  Alat pengeditan video dengan fitur AI untuk pemotongan dan
+                  pengeditan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 19 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.vidyard.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Vidyard</h6>
+                <p class="card-text text-muted small">
+                  Platform video marketing dan hosting untuk meningkatkan
+                  interaksi dan konversi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 20 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.powtoon.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Powtoon</h6>
+                <p class="card-text text-muted small">
+                  Platform pembuatan animasi dan video presentasi profesional
+                  dengan mudah.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 21 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.biteable.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Biteable</h6>
+                <p class="card-text text-muted small">
+                  Pembuat video animasi dan video perusahaan dengan template
+                  siap pakai.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 22 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.filmora.wondershare.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Filmora</h6>
+                <p class="card-text text-muted small">
+                  Alat pengeditan video dengan banyak efek, transisi, dan
+                  template.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 23 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.animaker.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Animaker</h6>
+                <p class="card-text text-muted small">
+                  Platform animasi dan pembuatan video dengan berbagai template.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 24 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.magisto.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Magisto</h6>
+                <p class="card-text text-muted small">
+                  Pembuat video otomatis berbasis AI yang menghasilkan video
+                  menarik dari klip Anda.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 25 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.movavi.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Movavi</h6>
+                <p class="card-text text-muted small">
+                  Perangkat lunak pengeditan video untuk membuat video menarik
+                  dengan alat canggih.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 26 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.animoto.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Animoto</h6>
+                <p class="card-text text-muted small">
+                  Buat video musik dan slideshow profesional secara cepat dengan
+                  drag-and-drop.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 27 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.biteable.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Biteable</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membuat video animasi dan video untuk keperluan
+                  pemasaran.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 28 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.offeo.com/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Offeo</h6>
+                <p class="card-text text-muted small">
+                  Pembuat video animasi dan video pemasaran dengan antarmuka
+                  yang sederhana.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 29 -->
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.renderforest.com/video-maker"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Renderforest</h6>
+                <p class="card-text text-muted small">
+                  Alat pembuatan video dan animasi berkualitas tinggi berbasis
+                  web.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Card no. 30 -->
+      </div>
+    </main>
+
+    <!-- page nations -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="..//home.html">Home</a>
+            <a href="../design/index.html">Desain</a>
+            <a href="../developments/index.html">Development</a>
+            <a href="../education/index.html">Education</a>
+            <a href="../exel/index.html">Excel</a>
+            <a href="../hiburan/index.html">Hiburan</a>
+            <a href="../images/index.html">Images</a>
+            <a href="../musik/index.html">Musik</a>
+            <a href="../tools/index.html">Tools</a>
+          </div>
+
+          <!-- Social Links -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Design Resources. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

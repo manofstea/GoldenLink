@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Image</h1>
+        <p class="lead opacity-75">
+          Temukan koleksi gambar berkualitas tinggi untuk kebutuhan desain dan
+          konten Anda
+        </p>
+      </div>
+    </header>
+    <!-- Search Box -->
+    <!-- Add below header -->
+    <form
+      class="d-flex justify-content-center my-4"
+      role="search"
+      onsubmit="event.preventDefault();"
+    >
+      <div class="input-group w-50">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Cari website..."
+          aria-label="Search"
+          oninput="searchWebsites()"
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="searchWebsites()"
+        >
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </form>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://unsplash.com/instant"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Unsplash Instant</h6>
+                <p class="card-text text-muted small">
+                  Platform gambar gratis dengan pencarian interaktif dan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 2 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.pexels.com/videos"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pexels Video</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan video stok gratis dengan kualitas tinggi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 3 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://gratisography.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Gratisography</h6>
+                <p class="card-text text-muted small">
+                  Koleksi gambar gratis dengan kualitas tinggi, cocok untuk
+                  proyek kreatif.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 4 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.rawpixel.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Rawpixel</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan gambar stok premium dengan koleksi gratis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 5 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://picjumbo.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Picjumbo</h6>
+                <p class="card-text text-muted small">
+                  Gambar stok gratis untuk berbagai keperluan, termasuk
+                  komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 6 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://foodiesfeed.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Foodiesfeed</h6>
+                <p class="card-text text-muted small">
+                  Sumber gambar gratis dengan fokus pada makanan dan minuman.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 7 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://isorepublic.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">ISO Republic</h6>
+                <p class="card-text text-muted small">
+                  Platform gambar dan video stok berkualitas tinggi yang dapat
+                  diunduh gratis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 8 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://burst.shopify.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Burst by Shopify</h6>
+                <p class="card-text text-muted small">
+                  Platform gambar gratis dengan kategori untuk keperluan bisnis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 9 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.lifeofpix.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Life of Pix</h6>
+                <p class="card-text text-muted small">
+                  Koleksi gambar gratis dengan kualitas tinggi dari fotografer
+                  profesional.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 10 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://kaboompics.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Kaboompics</h6>
+                <p class="card-text text-muted small">
+                  Gambar gratis dengan kualitas tinggi untuk proyek desain dan
+                  komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 11 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.shutterstock.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Shutterstock</h6>
+                <p class="card-text text-muted small">
+                  Platform premium untuk gambar dan video stok berkualitas
+                  tinggi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 12 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.istockphoto.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">iStock Photo</h6>
+                <p class="card-text text-muted small">
+                  Koleksi gambar stok premium, ilustrasi, dan video.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 13 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.freepik.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Freepik</h6>
+                <p class="card-text text-muted small">
+                  Gambar, vektor, dan PSD gratis untuk proyek desain.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 14 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.designbundles.net"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Design Bundles</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan desain grafis, font, dan elemen kreatif lainnya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 15 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://pixabay.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pixabay</h6>
+                <p class="card-text text-muted small">
+                  Gambar, ilustrasi, dan video gratis dengan kualitas tinggi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 16 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://stockvault.net" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Stockvault</h6>
+                <p class="card-text text-muted small">
+                  Gambar stok gratis untuk penggunaan pribadi dan komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 17 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.canva.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Canva</h6>
+                <p class="card-text text-muted small">
+                  Platform desain grafis untuk membuat visual dengan mudah.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 18 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.designhill.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Designhill</h6>
+                <p class="card-text text-muted small">
+                  Layanan desain logo dan produk kreatif secara online.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 19 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://placeit.net" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Placeit</h6>
+                <p class="card-text text-muted small">
+                  Alat untuk membuat mockup, logo, video, dan animasi secara
+                  cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 20 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.picfair.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Picfair</h6>
+                <p class="card-text text-muted small">
+                  Platform jual beli foto yang memungkinkan fotografer menjual
+                  gambar mereka.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 21 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://unsplash.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Unsplash</h6>
+                <p class="card-text text-muted small">
+                  Koleksi gambar gratis berkualitas tinggi yang dapat digunakan
+                  untuk berbagai kebutuhan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 22 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.pexels.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pexels</h6>
+                <p class="card-text text-muted small">
+                  Foto dan video gratis untuk penggunaan pribadi dan komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 23 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.burst.shopify.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Burst by Shopify</h6>
+                <p class="card-text text-muted small">
+                  Koleksi gambar gratis dari Shopify untuk keperluan bisnis dan
+                  komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 24 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.rawpixel.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Rawpixel</h6>
+                <p class="card-text text-muted small">
+                  Foto dan gambar berkualitas tinggi dengan opsi berlisensi dan
+                  gratis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 25 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.pixabay.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Pixabay</h6>
+                <p class="card-text text-muted small">
+                  Gambar stok dan video gratis yang dapat digunakan untuk proyek
+                  komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 26 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.canva.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Canva</h6>
+                <p class="card-text text-muted small">
+                  Platform desain grafis yang menyediakan template siap pakai
+                  dan alat editing.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 27 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.kisspng.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">KissPNG</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk gambar PNG transparan dan vektor gratis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 28 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://freeimages.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Freeimages</h6>
+                <p class="card-text text-muted small">
+                  Koleksi gambar dan foto gratis untuk kebutuhan desain dan
+                  proyek.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 29 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.freepik.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Freepik</h6>
+                <p class="card-text text-muted small">
+                  Menyediakan gambar, ilustrasi, dan vektor gratis untuk
+                  penggunaan pribadi dan komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card no 30 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.stockphotos.io"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Stock Photos IO</h6>
+                <p class="card-text text-muted small">
+                  Gambar stok gratis yang dapat digunakan untuk proyek pribadi
+                  atau komersial.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- page nations -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="..//home.html">Home</a>
+            <a href="../design/index.html">Desain</a>
+            <a href="../developments/index.html">Development</a>
+            <a href="../education/index.html">Education</a>
+            <a href="../exel/index.html">Exel</a>
+            <a href="../hiburan/index.html">Hiburan</a>
+            <a href="../musik/index.html">Musik</a>
+            <a href="../tools/index.html">Tools</a>
+            <a href="../video/index.html">Video</a>
+          </div>
+
+          <!-- Social Links -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Design Resources. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

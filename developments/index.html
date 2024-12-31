@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en/id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Development</h1>
+        <p class="lead opacity-75">
+          Eksplorasi tools dan resources untuk pengembangan aplikasi modern
+        </p>
+      </div>
+    </header>
+    <!-- Search Box -->
+    <!-- Add search form below header -->
+    <form
+      class="d-flex justify-content-center my-4"
+      role="search"
+      onsubmit="event.preventDefault();"
+    >
+      <div class="input-group w-50">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Cari website..."
+          aria-label="Search"
+          oninput="searchWebsites()"
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="searchWebsites()"
+        >
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </form>
+
+    <!-- Add script before closing body tag -->
+    <script src="script.js"></script>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.codepen.io" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Code Pen</h6>
+                <p class="card-text text-muted small">
+                  Editor online untuk HTML, CSS, dan Javascript dengan preview
+                  langsung.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.wix.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Wix</h6>
+                <p class="card-text text-muted small">
+                  Platform pembuatan situs web drag-and-drop dengan template
+                  menarik.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.webflow.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Webflow</h6>
+                <p class="card-text text-muted small">
+                  Alat desain dan pengembangan visual untuk membangun situs web
+                  responsif.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.carrd.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Carrd</h6>
+                <p class="card-text text-muted small">
+                  Membuat situs web sederhana satu halaman dengan cepat.
+                </p>
+
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.tilda.cc" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Tilda</h6>
+                <p class="card-text text-muted small">
+                  Pembangun situs web visual yang mendukung desain modern.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.strikingly.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Strikingly</h6>
+                <p class="card-text text-muted small">
+                  Pembuatan situs web khusus untuk halaman sederhana dan
+                  portofolio.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.jimbo.co" class="card-wrapper">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Jimbo</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membuat situs web e-commerce atau pribadi tanpa
+                  coding.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.Squarespace.com"
+            class="card-wrapper"
+            target="_blank"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Squarespace</h6>
+                <p class="card-text text-muted small">
+                  Platform yang kuat untuk membuat situs web profesional dengan
+                  mudah.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.weebly.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Weebly</h6>
+                <p class="card-text text-muted small">
+                  Membuat situs web drag-and-drop dengan integrasi e-commerce.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.site123.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Site123</h6>
+                <p class="card-text text-muted small">
+                  Platform cepat untuk membuat situs web responsif tanpa
+                  keahlian teknis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 11 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.zoho.com/site/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Zoho Sites</h6>
+                <p class="card-text text-muted small">
+                  Alat pembuatan situs web berbasis drag-and-drop dengan
+                  integrasi Zoho.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 12 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.freecodecamp.org"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Freecodecamp</h6>
+                <p class="card-text text-muted small">
+                  Belajar HTML, CSS, JavaScript, dan pengembangan web full-stack
+                  gratis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 13 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://developer.mozilla.org/en-US/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">MDN Web Docs</h6>
+                <p class="card-text text-muted small">
+                  Dokumentasi komprehensif tentang HTML, CSS, dan JavaScript.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 14 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.khanacademy.org/computeing/computer-programming"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">
+                  Khan Academy - Computer Programming
+                </h6>
+                <p class="card-text text-muted small">
+                  Tutorial dasar pemrograman dan pengembangan web.
+                </p>
+
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 15 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.theodinproject.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">The Odin Project</h6>
+                <p class="card-text text-muted small">
+                  Kurikulum belajar pengembangan web dari dasar hingga
+                  profesional.
+                </p>
+
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 16 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.cs50.harvard.edu/web/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">
+                  CS50’s Web Programming with Python and JavaScript
+                </h6>
+                <p class="card-text text-muted small">
+                  Kursus gratis dari Harvard untuk belajar pengembangan web
+                  modern.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 17 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.w3schools.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">W3school</h6>
+                <p class="card-text text-muted small">
+                  Tutorial interaktif untuk belajar dasar-dasar pengembangan
+                  web.
+                </p>
+
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 18 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.scrimba.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Scrimba</h6>
+                <p class="card-text text-muted small">
+                  Kursus interaktif untuk belajar coding langsung dari browser.
+                </p>
+
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 19 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.sololearn.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Sololearn</h6>
+                <p class="card-text text-muted small">
+                  Platform pembelajaran gratis untuk berbagai bahasa
+                  pemrograman.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 20 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.coursera.org"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">
+                  Coursera - Web Development
+                </h6>
+                <p class="card-text text-muted small">
+                  Kursus pengembangan web gratis dari universitas ternama.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 21 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.frontendmentor.io"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Frontend Mentor</h6>
+                <p class="card-text text-muted small">
+                  Tantangan desain web untuk mengasah keterampilan pengkodean.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 22 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.jsfiddle.net/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">JSFiddle</h6>
+                <p class="card-text text-muted small">
+                  Alat sederhana untuk bereksperimen dengan kode JavaScript.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 23 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.glitch.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Glitch</h6>
+                <p class="card-text text-muted small">
+                  Alat kolaborasi untuk membuat proyek web dengan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 24 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.replit.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Replit</h6>
+                <p class="card-text text-muted small">
+                  IDE berbasis web untuk menjalankan berbagai bahasa
+                  pemrograman.
+                </p>
+
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 25 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.stackblitz.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Stack Blitz</h6>
+                <p class="card-text text-muted small">
+                  Lingkungan pengembangan online untuk framework modern seperti
+                  React.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 26 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.caniuse.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Can I Use</h6>
+                <p class="card-text text-muted small">
+                  Memeriksa kompatibilitas fitur web di berbagai browser.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 27 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://carbon.now.sh/" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Carbon</h6>
+                <p class="card-text text-muted small">
+                  Membuat cuplikan kode dengan tampilan menarik untuk dibagikan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 28 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.sublimemerge.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Sublime Merge</h6>
+                <p class="card-text text-muted small">
+                  Alat manajemen Git yang ringan dan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 29 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.regex101.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Regex101</h6>
+                <p class="card-text text-muted small">
+                  Editor untuk membuat dan menguji ekspresi reguler.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- card 30 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.postman.com/"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Postman</h6>
+                <p class="card-text text-muted small">
+                  Membantu dalam pengembangan, pengujian, dan dokumentasi API.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- page nations -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="..//home.html">Home</a>
+            <a href="../design/index.html">Desain</a>
+            <a href="../education/index.html">Education</a>
+            <a href="../exel/index.html">Excel</a>
+            <a href="../hiburan/index.html">Hiburan</a>
+            <a href="../tools/index.html">Images</a>
+            <a href="../musik/index.html">Musik</a>
+            <a href="../tools/index.html">Tools</a>
+            <a href="../video/index.html">Video</a>
+          </div>
+
+          <!-- Social Links -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Design Resources. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

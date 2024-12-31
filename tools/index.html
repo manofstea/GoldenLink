@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Tools</h1>
+        <p class="lead opacity-75">
+          Jelajahi berbagai tools dan utilitas untuk meningkatkan produktivitas
+          kerja Anda
+        </p>
+      </div>
+    </header>
+    <!-- Search Box -->
+    <!-- Add below header -->
+    <form
+      class="d-flex justify-content-center my-4"
+      role="search"
+      onsubmit="event.preventDefault();"
+    >
+      <div class="input-group w-50">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Cari website..."
+          aria-label="Search"
+          oninput="searchWebsites()"
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="searchWebsites()"
+        >
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </form>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <div class="row g-2">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.noisli.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Noisli</h6>
+                <p class="card-text text-muted small">
+                  Membantu menciptakan suasana kerja yang lebih produktif dengan
+                  suara latar yang menenangkan.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.jotform.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">JotForm</h6>
+                <p class="card-text text-muted small">
+                  Membuat form online dengan mudah tanpa coding.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.whatfontis.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">WhatFontIs</h6>
+                <p class="card-text text-muted small">
+                  Menemukan font dari gambar atau situs web.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://krisp.ai" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Krisp</h6>
+                <p class="card-text text-muted small">
+                  Menyaring kebisingan dari panggilan suara atau video.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.privacy.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Privacy.com</h6>
+                <p class="card-text text-muted small">
+                  Membuat kartu virtual untuk berbelanja online dengan lebih
+                  aman.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://cuttlefishapp.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Cuttlefish</h6>
+                <p class="card-text text-muted small">
+                  Pembuat desain grafis menggunakan template dengan antarmuka
+                  yang sangat sederhana.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.tackker.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Tackker</h6>
+                <p class="card-text text-muted small">
+                  Platform manajemen proyek berbasis visual yang lebih mudah
+                  diakses.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://fastpdf.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">FastPDF</h6>
+                <p class="card-text text-muted small">
+                  Alat gratis untuk mengonversi, mengedit, dan menggabungkan
+                  PDF.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://inkforall.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Ink</h6>
+                <p class="card-text text-muted small">
+                  Pembuat konten dengan optimasi SEO berbasis AI untuk
+                  meningkatkan visibilitas di mesin pencari.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.lumen5.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Lumen5</h6>
+                <p class="card-text text-muted small">
+                  Membuat video otomatis dari artikel atau teks dengan bantuan
+                  AI.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.scrivenerapp.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Scrivener</h6>
+                <p class="card-text text-muted small">
+                  Alat menulis yang cocok untuk penulis, memungkinkan penataan
+                  dan penulisan proyek besar.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://app.convertkit.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">ConvertKit</h6>
+                <p class="card-text text-muted small">
+                  Platform email marketing untuk mengelola daftar email dan
+                  mengirimkan kampanye.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://deepdreamgenerator.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Deep Dream Generator</h6>
+                <p class="card-text text-muted small">
+                  Alat berbasis AI untuk menciptakan karya seni dari gambar
+                  dengan efek surreal.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.parabola.io"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Parabola</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membuat automasi data tanpa perlu coding.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.remnote.io" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">RemNote</h6>
+                <p class="card-text text-muted small">
+                  Alat pencatat yang menyarankan teknik belajar berbasis
+                  flashcards.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.snakemake.org"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Snakemake</h6>
+                <p class="card-text text-muted small">
+                  Alat untuk otomatisasi alur kerja di bidang data sains dan
+                  bioinformatika.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.zotero.org" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Zotero</h6>
+                <p class="card-text text-muted small">
+                  Manajer referensi dan bibliografi untuk penelitian akademik.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.circl.lu" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">CIRCL</h6>
+                <p class="card-text text-muted small">
+                  Website untuk keamanan siber dan berbagai alat keamanan
+                  digital lainnya.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.online-image-editor.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Online Image Editor</h6>
+                <p class="card-text text-muted small">
+                  Editor gambar gratis dengan banyak fitur untuk mengedit gambar
+                  secara online.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.tubebuddy.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">TubeBuddy</h6>
+                <p class="card-text text-muted small">
+                  Alat optimasi untuk membantu pengelola saluran YouTube
+                  meningkatkan performa dan SEO video.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.mindmeister.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">MindMeister</h6>
+                <p class="card-text text-muted small">
+                  Alat mind mapping untuk membantu merencanakan dan
+                  mengorganisir ide-ide.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.figma.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Figma</h6>
+                <p class="card-text text-muted small">
+                  Alat desain kolaboratif untuk membuat prototipe dan antarmuka
+                  pengguna secara real-time.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.trello.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Trello</h6>
+                <p class="card-text text-muted small">
+                  Alat manajemen proyek berbasis papan untuk mengatur tugas dan
+                  kolaborasi tim.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.zapier.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Zapier</h6>
+                <p class="card-text text-muted small">
+                  Alat otomatisasi untuk menghubungkan aplikasi dan
+                  mengotomatiskan alur kerja.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 25 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.wrike.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Wrike</h6>
+                <p class="card-text text-muted small">
+                  Platform manajemen proyek dengan fitur pelacakan waktu, tugas,
+                  dan kolaborasi tim.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 26 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.gumroad.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Gumroad</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk menjual karya digital seperti eBook, musik, dan
+                  lebih banyak lagi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 27 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.gravitee.io"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Gravitee</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membuat API dan layanan untuk pengelolaan dan
+                  integrasi aplikasi.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 28 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.balsamiq.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Balsamiq</h6>
+                <p class="card-text text-muted small">
+                  Alat wireframing untuk membuat prototipe aplikasi dan website
+                  dengan cepat.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 29 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a
+            href="https://www.invisionapp.com"
+            class="card-wrapper"
+            target="_blank"
+          >
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">InVision</h6>
+                <p class="card-text text-muted small">
+                  Alat desain dan prototyping yang memungkinkan kolaborasi tim
+                  dalam proyek desain UI/UX.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 30 -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="https://www.sumo.com" class="card-wrapper" target="_blank">
+            <div class="card mh-100%">
+              <div class="card-body p-4">
+                <h6 class="card-title fw-bold mb-2">Sumo</h6>
+                <p class="card-text text-muted small">
+                  Platform untuk membangun dan mempercepat pertumbuhan email dan
+                  penjualan bagi bisnis kecil.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2 mb-2"
+                >
+                  <span class="text-primary small">Visit Website</span>
+                  <i class="fas fa-arrow-right arrow text-primary"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- page nations -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="..//home.html">Home</a>
+            <a href="../design/index.html">Desain</a>
+            <a href="../developments/index.html">Development</a>
+            <a href="../education/index.html">Education</a>
+            <a href="../exel/index.html">Excel</a>
+            <a href="../hiburan/index.html">Hiburan</a>
+            <a href="../images/index.html">Images</a>
+            <a href="../musik/index.html">Musik</a>
+            <a href="../video/index.html">Video</a>
+          </div>
+
+          <!-- Social Links -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Design Resources. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
