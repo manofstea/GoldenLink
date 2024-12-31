@@ -36,11 +36,11 @@
     <!-- Search Box -->
     <!-- Add below header -->
     <form
-      class="d-flex justify-content-center my-4"
+      class="d-flex justify-content-center my-4 px-3"
       role="search"
       onsubmit="event.preventDefault();"
     >
-      <div class="input-group w-50">
+      <div class="input-group" style="width: 90%; max-width: 600px">
         <input
           type="search"
           class="form-control"
@@ -53,7 +53,8 @@
           type="button"
           onclick="searchWebsites()"
         >
-          <i class="fas fa-search"></i> Search
+          <i class="fas fa-search"></i>
+          <span class="d-none d-sm-inline">Search</span>
         </button>
       </div>
     </form>
@@ -61,7 +62,7 @@
     <main class="container py-4">
       <div class="row g-2">
         <!-- Card 1 -->
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.pexels.com/video/"
             class="card-wrapper"
@@ -84,7 +85,7 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://pixabay.com/videos/"
             class="card-wrapper"
@@ -108,7 +109,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 2 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.videvo.net/"
             class="card-wrapper"
@@ -132,7 +134,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 3 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a href="https://coverr.co/" class="card-wrapper" target="_blank">
             <div class="card mh-100%">
               <div class="card-body p-4">
@@ -152,7 +155,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 4 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://deepai.org/machine-learning-model/text2video"
             class="card-wrapper"
@@ -175,7 +179,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 5 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.synthesia.io/"
             class="card-wrapper"
@@ -198,7 +203,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 6 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.lumen5.com/"
             class="card-wrapper"
@@ -221,7 +227,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!--card 7  -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a href="https://runwayml.com/" class="card-wrapper" target="_blank">
             <div class="card mh-100%">
               <div class="card-body p-4">
@@ -241,7 +248,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 8 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a href="https://www.veed.io/" class="card-wrapper" target="_blank">
             <div class="card mh-100%">
               <div class="card-body p-4">
@@ -261,7 +269,8 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- card 9 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a href="https://www.veed.io/" class="card-wrapper" target="_blank">
             <div class="card mh-100%">
               <div class="card-body p-4">
@@ -282,7 +291,7 @@
         </div>
         <!-- Card no. 10 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.clipchamp.com/en/"
             class="card-wrapper"
@@ -306,7 +315,7 @@
         </div>
         <!-- Card no. 11 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.kapwing.com/"
             class="card-wrapper"
@@ -331,7 +340,7 @@
         </div>
         <!-- Card no. 12 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.flexclip.com/"
             class="card-wrapper"
@@ -354,9 +363,9 @@
             </div>
           </a>
         </div>
-        <!-- Card no. 13 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- Card no. 13 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.animoto.com/"
             class="card-wrapper"
@@ -379,9 +388,9 @@
             </div>
           </a>
         </div>
-        <!-- Card no. 14 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- Card no. 14 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.magisto.com/"
             class="card-wrapper"
@@ -404,9 +413,9 @@
             </div>
           </a>
         </div>
-        <!-- Card no. 15 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- Card no. 15 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.renderforest.com/video-maker"
             class="card-wrapper"
@@ -430,7 +439,7 @@
         </div>
         <!-- Card no. 16 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.invideo.io/"
             class="card-wrapper"
@@ -455,7 +464,7 @@
         </div>
         <!-- Card no. 17 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.wave.video/"
             class="card-wrapper"
@@ -479,7 +488,7 @@
           </a>
         </div>
         <!-- Card no. 18 -->
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a href="https://www.veed.io/" class="card-wrapper" target="_blank">
             <div class="card mh-100%">
               <div class="card-body p-4">
@@ -500,7 +509,7 @@
         </div>
         <!-- Card no. 19 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.vidyard.com/"
             class="card-wrapper"
@@ -523,9 +532,9 @@
             </div>
           </a>
         </div>
-        <!-- Card no. 20 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- Card no. 20 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.powtoon.com/"
             class="card-wrapper"
@@ -548,9 +557,9 @@
             </div>
           </a>
         </div>
-        <!-- Card no. 21 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- Card no. 21 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.biteable.com/"
             class="card-wrapper"
@@ -573,9 +582,9 @@
             </div>
           </a>
         </div>
-        <!-- Card no. 22 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <!-- Card no. 22 -->
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.filmora.wondershare.com/"
             class="card-wrapper"
@@ -600,7 +609,7 @@
         </div>
         <!-- Card no. 23 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.animaker.com/"
             class="card-wrapper"
@@ -624,7 +633,7 @@
         </div>
         <!-- Card no. 24 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.magisto.com/"
             class="card-wrapper"
@@ -649,7 +658,7 @@
         </div>
         <!-- Card no. 25 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.movavi.com/"
             class="card-wrapper"
@@ -674,7 +683,7 @@
         </div>
         <!-- Card no. 26 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.animoto.com/"
             class="card-wrapper"
@@ -699,7 +708,7 @@
         </div>
         <!-- Card no. 27 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.biteable.com/"
             class="card-wrapper"
@@ -724,7 +733,7 @@
         </div>
         <!-- Card no. 28 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a href="https://www.offeo.com/" class="card-wrapper" target="_blank">
             <div class="card mh-100%">
               <div class="card-body p-4">
@@ -745,7 +754,7 @@
         </div>
         <!-- Card no. 29 -->
 
-        <div class="col-6 col-md-3 col-lg-2">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a
             href="https://www.renderforest.com/video-maker"
             class="card-wrapper"
