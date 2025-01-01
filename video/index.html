@@ -36,11 +36,11 @@
     <!-- Search Box -->
     <!-- Add below header -->
     <form
-      class="d-flex justify-content-center my-4 px-3"
+      class="d-flex justify-content-center my-4"
       role="search"
       onsubmit="event.preventDefault();"
     >
-      <div class="input-group" style="width: 90%; max-width: 600px">
+      <div class="input-group w-50">
         <input
           type="search"
           class="form-control"
@@ -53,14 +53,13 @@
           type="button"
           onclick="searchWebsites()"
         >
-          <i class="fas fa-search"></i>
-          <span class="d-none d-sm-inline">Search</span>
+          <i class="fas fa-search"></i> Search
         </button>
       </div>
     </form>
     <!-- Main Content -->
     <main class="container py-4">
-      <div class="row g-2">
+      <div class="row g-2 d-flex d-flex-row flex-wrap justify-content-center">
         <!-- Card 1 -->
         <div class="col-6 col-sm-6 col-md-4 col-lg-2">
           <a

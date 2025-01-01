@@ -229,8 +229,42 @@ header .container {
   margin-top: 2rem;
   color: #adb5bd;
 }
-.search-section {
-  background: #f8f9fa;
-  padding: 5px;
-  border-bottom: 1px solid #eee;
+@media (max-width: 576px) {
+  .input-group {
+    width: 100% !important;
+    margin: 0 10px;
+  }
+
+  .form-control {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .btn-primary {
+    padding: 0 15px;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+}
+
+@media (min-width: 577px) {
+  .input-group {
+    max-width: 600px;
+    width: 90% !important;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #eb3349;
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateX(2px);
 }
