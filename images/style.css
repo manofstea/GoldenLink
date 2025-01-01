@@ -228,6 +228,12 @@ header .container {
   margin-top: 2rem;
   color: #adb5bd;
 }
+.search-section {
+  background: #f8f9fa;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+/* Add to your CSS file */
 @media (max-width: 576px) {
   .input-group {
     width: 100% !important;
