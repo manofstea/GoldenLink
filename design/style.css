@@ -44,9 +44,12 @@ header .container {
   position: relative;
   z-index: 2;
 }
+.col-6 {
+  transition: opacity 0.3s ease;
+}
 
 .card {
-  width: 200px; /* Adjusted width */
+  width: 150px; /* Adjusted width */
   height: 200px; /* Adjusted height */
   margin: 0 auto;
   border: none;

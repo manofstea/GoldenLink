@@ -14,6 +14,9 @@ body {
 .container {
   flex: 1;
 }
+.col-6 {
+  transition: opacity 0.3s ease;
+}
 
 header {
   background: linear-gradient(rgba(45, 35, 122, 0.4), rgba(55, 65, 178, 0.4)),
@@ -46,7 +49,7 @@ header .container {
 }
 
 .card {
-  width: 200px; /* Adjusted width */
+  width: 150px; /* Adjusted width */
   height: 200px; /* Adjusted height */
   margin: 0 auto;
   border: none;

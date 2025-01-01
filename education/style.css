@@ -41,9 +41,12 @@ header .container {
   position: relative;
   z-index: 2;
 }
+.col-6 {
+  transition: opacity 0.3s ease;
+}
 
 .card {
-  width: 200px; /* Adjusted width */
+  width: 150px; /* Adjusted width */
   height: 200px; /* Adjusted height */
   margin: 0 auto;
   border: none;
@@ -56,10 +59,9 @@ header .container {
 }
 
 .card-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .card-wrapper {
@@ -97,11 +99,6 @@ header .container {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-}
-
-.card-text ul {
-  padding-left: 1rem;
-  margin-top: 0.25rem;
 }
 
 .card:hover {
